@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+cat gleam.toml | sed -nE 's/^gleam.*([[:digit:]]+\.[[:digit:]]+(\.[[:digit:]]+))"/\1/p'
